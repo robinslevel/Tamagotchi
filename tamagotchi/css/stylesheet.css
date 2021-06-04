@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container{
+    max-width: 600px;
+    background: white;
+    height: 800;
+    margin: 20px auto;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header{
+    float: left;
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    
+}
+
+.placement{
+  padding-top: 30px;
+}
+
+.monster{
+  width: 600px;
+  height: 350px;
+  background-image: url("/images/monster_no_smile.jpg");
+  background-position: center;
+  background-size: 250px 175px;
+  background-repeat: no-repeat;
+}
+
+.monsterl{
+  width: 600px;
+  height: 350px;
+  background-image: url("/images/monster_unhappy.jpg");
+  background-position: center;
+  background-size: 250px 175px;
+  background-repeat: no-repeat;
+}
+
+.monsters{
+  width: 600px;
+  height: 350px;
+  background-image: url("/images/monster_smile.jpg");
+  background-position: center;
+  background-size: 250px 175px;
+  background-repeat: no-repeat;
+}
+
+.monsterb{
+  width: 600px;
+  height: 350px;
+  background-image: url("/images/monster_normal.jpg");
+  background-position: center;
+  background-size: 250px 175px;
+  background-repeat: no-repeat;
+}
+
+.monsterd{
+  width: 600px;
+  height: 350px;
+  background-image: url("/images/monster_dead.jpg");
+  background-position: center;
+  background-size: 250px 175px;
+  background-repeat: no-repeat;
+}
+
+.lifem{
+  background-color: #cccccc;
+  width: 600px;
+  height: 100px;
+  display: flex;
+
+}
+.meter{
+  padding: 20px;
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  padding-top: 50px;
+  width: 580px;
+  margin: 10px;
+  max-width: 580px;
+  font-size: 30px;
+  text-align: center;
+  padding: 1em;
+}
+
+
+.textbar{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.stats{
+  display: flex;
+  justify-content: center;
+}
+button {
+display: block;
+font-size: 16px;
+margin: 1em;
+border: 0.15em solid #cccccc;
+text-decoration: none;
+line-height: 1;
+padding: 16px 30px;
+color: #000000;
+background-color: #cccccc;
+color: #000000;
+cursor: pointer;
+transition: all 0.3s linear;
+}
+button:hover{
+  border-color:#7a7a7a;
+}
+button:active{
+  background-color:#999999 ;
+}
+.btsr{
+  font-size: 16px;
+}
