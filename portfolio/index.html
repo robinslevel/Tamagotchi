@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Korkor | Portfolio</title>
+    <meta name="description" content="Portfolio of Robin Korkor - Web Developer & Digital Marketing Specialist">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Robin Korkor</a>
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="certifications/google-analytics.html">Certifications</a></li>
+                <li><a href="https://github.com/robinslevel" target="_blank">GitHub</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Hi, I'm Robin</h1>
+            <p>Web Developer & Digital Marketing Specialist. I create modern, performant websites and use data to drive better decisions.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Taxipoint -->
+                <a href="projects/taxipoint.html" class="project-card">
+                    <svg class="project-image" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="taxiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f59e0b"/>
+                                <stop offset="100%" style="stop-color:#d97706"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="400" height="200" fill="url(#taxiGrad)"/>
+                        <text x="200" y="90" text-anchor="middle" fill="white" font-size="40" font-weight="bold">🚕</text>
+                        <text x="200" y="130" text-anchor="middle" fill="white" font-size="20" font-weight="600">Taxipoint</text>
+                        <text x="200" y="155" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12">Benelux Taxi Service</text>
+                    </svg>
+                    <div class="project-content">
+                        <h3>Taxipoint — Taxi Service Website</h3>
+                        <p>A modern, responsive website for a taxi company operating across the Benelux. Features multi-language support, dark/light mode, and mobile-first design.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">i18n</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- HeartRank -->
+                <a href="projects/heartrank.html" class="project-card">
+                    <svg class="project-image" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ec4899"/>
+                                <stop offset="100%" style="stop-color:#be185d"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="400" height="200" fill="url(#heartGrad)"/>
+                        <text x="200" y="90" text-anchor="middle" fill="white" font-size="40" font-weight="bold">💕</text>
+                        <text x="200" y="130" text-anchor="middle" fill="white" font-size="20" font-weight="600">HeartRank</text>
+                        <text x="200" y="155" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12">Photo Rating App</text>
+                    </svg>
+                    <div class="project-content">
+                        <h3>HeartRank — Photo Rating Web App</h3>
+                        <p>An experimental MVP where users rate profiles 1–10 with a Tinder-style interface. Built with Next.js, TypeScript, and Tailwind CSS.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Tamagotchi -->
+                <a href="projects/tamagotchi.html" class="project-card">
+                    <svg class="project-image" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="tamaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="400" height="200" fill="url(#tamaGrad)"/>
+                        <text x="200" y="90" text-anchor="middle" fill="white" font-size="40" font-weight="bold">🐣</text>
+                        <text x="200" y="130" text-anchor="middle" fill="white" font-size="20" font-weight="600">Tamagotchi</text>
+                        <text x="200" y="155" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12">Virtual Pet Game</text>
+                    </svg>
+                    <div class="project-content">
+                        <h3>Tamagotchi — Virtual Pet Game</h3>
+                        <p>A browser-based virtual pet game where players manage hunger, happiness, and energy. Features pet evolution and random events.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Game Dev</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Preview -->
+    <section class="section" style="background: rgba(102, 126, 234, 0.03);">
+        <div class="container">
+            <h2 class="section-title">Certifications & Training</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <h3>Google Analytics Certification</h3>
+                    <p>Comprehensive understanding of GA4, data collection, and analysis.</p>
+                    <span class="cert-badge">✓ Verified</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏪</div>
+                    <h3>Grow Offline Sales Certification</h3>
+                    <p>Combining online and offline data to understand customer behavior.</p>
+                    <span class="cert-badge">✓ Verified</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📈</div>
+                    <h3>GA4 Data & Reports</h3>
+                    <p>Advanced skills in reading reports with dimensions and metrics.</p>
+                    <span class="cert-badge">✓ Verified</span>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="certifications/google-analytics.html" class="cta-button secondary">View All Certifications →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Projects</a>
+                <a href="certifications/google-analytics.html">Certifications</a>
+                <a href="https://github.com/robinslevel" target="_blank">GitHub</a>
+                <a href="https://skillshop.credential.net/profile/robinkorkor83800/wallet" target="_blank">Skillshop</a>
+            </div>
+            <p>© 2026 Robin Korkor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            const isDark = document.body.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            document.querySelector('.theme-toggle').textContent = isDark ? '☀️' : '🌙';
+        }
+
+        // Load saved theme
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.body.classList.add('dark');
+            document.querySelector('.theme-toggle').textContent = '☀️';
+        }
+
+        // Mobile Navigation
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

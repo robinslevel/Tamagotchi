@@ -9,9 +9,30 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.portfolio-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.portfolio-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(-3px);
 }
 
 .container {

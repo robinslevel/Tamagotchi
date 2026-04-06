@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxipoint — Robin Korkor Portfolio</title>
+    <meta name="description" content="Taxipoint - A modern, responsive taxi service website for the Benelux region">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Robin Korkor</a>
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Projects</a></li>
+                <li><a href="../certifications/google-analytics.html">Certifications</a></li>
+                <li><a href="https://github.com/robinslevel" target="_blank">GitHub</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Projects</a> / <span>Taxipoint</span>
+        </div>
+    </div>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>🚕 Taxipoint — Taxi Service Website</h1>
+            <p style="font-size: 1.1rem; color: #64748b; max-width: 700px;">A modern, responsive website for a taxi company operating across the Benelux. Designed and developed with a focus on clarity, performance, and user experience.</p>
+            <div class="project-meta">
+                <span>📅 2025</span>
+                <span>🌍 Benelux Region</span>
+                <span>💻 Vanilla HTML/CSS/JS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase Image -->
+    <div class="container">
+        <div class="project-showcase">
+            <svg class="showcase-image" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="taxiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1a1a2e"/>
+                        <stop offset="100%" style="stop-color:#16213e"/>
+                    </linearGradient>
+                    <linearGradient id="taxiAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#f59e0b"/>
+                        <stop offset="100%" style="stop-color:#fbbf24"/>
+                    </linearGradient>
+                </defs>
+                <!-- Browser frame -->
+                <rect width="1200" height="600" rx="12" fill="#1e293b"/>
+                <rect x="0" y="0" width="1200" height="40" rx="12" fill="#334155"/>
+                <circle cx="20" cy="20" r="6" fill="#ef4444"/>
+                <circle cx="44" cy="20" r="6" fill="#f59e0b"/>
+                <circle cx="68" cy="20" r="6" fill="#22c55e"/>
+                <rect x="100" y="12" width="300" height="16" rx="8" fill="#475569"/>
+                
+                <!-- Website content mockup -->
+                <rect x="40" y="60" width="1120" height="520" fill="url(#taxiBg)"/>
+                
+                <!-- Header -->
+                <rect x="60" y="80" width="120" height="30" rx="4" fill="url(#taxiAccent)"/>
+                <text x="120" y="101" text-anchor="middle" fill="#1a1a2e" font-size="14" font-weight="bold">TAXIPOINT</text>
+                <rect x="900" y="85" width="60" height="20" rx="4" fill="transparent" stroke="#fff" stroke-width="1"/>
+                <rect x="970" y="85" width="60" height="20" rx="4" fill="transparent" stroke="#fff" stroke-width="1"/>
+                <rect x="1040" y="85" width="80" height="20" rx="10" fill="url(#taxiAccent)"/>
+                
+                <!-- Hero section -->
+                <text x="100" y="200" fill="white" font-size="36" font-weight="bold">Book Your Ride</text>
+                <text x="100" y="240" fill="white" font-size="36" font-weight="bold">Across Benelux</text>
+                <rect x="100" y="270" width="400" height="2" fill="url(#taxiAccent)"/>
+                <text x="100" y="310" fill="#94a3b8" font-size="16">Reliable taxi service available 24/7</text>
+                <text x="100" y="335" fill="#94a3b8" font-size="16">in Netherlands, Belgium & Luxembourg</text>
+                
+                <!-- Booking form mockup -->
+                <rect x="100" y="370" width="350" height="45" rx="8" fill="#334155"/>
+                <text x="120" y="399" fill="#94a3b8" font-size="14">📍 Pickup location</text>
+                <rect x="100" y="425" width="350" height="45" rx="8" fill="#334155"/>
+                <text x="120" y="454" fill="#94a3b8" font-size="14">🎯 Destination</text>
+                <rect x="100" y="490" width="350" height="45" rx="8" fill="url(#taxiAccent)"/>
+                <text x="275" y="519" text-anchor="middle" fill="#1a1a2e" font-size="14" font-weight="bold">Book Now</text>
+                
+                <!-- Car illustration -->
+                <ellipse cx="850" cy="400" rx="200" ry="100" fill="rgba(245,158,11,0.1)"/>
+                <text x="850" y="380" text-anchor="middle" fill="white" font-size="100">🚕</text>
+                
+                <!-- Features icons -->
+                <rect x="600" y="500" width="140" height="60" rx="8" fill="rgba(255,255,255,0.05)"/>
+                <text x="670" y="525" text-anchor="middle" fill="#f59e0b" font-size="20">🌍</text>
+                <text x="670" y="545" text-anchor="middle" fill="white" font-size="10">Multi-language</text>
+                
+                <rect x="760" y="500" width="140" height="60" rx="8" fill="rgba(255,255,255,0.05)"/>
+                <text x="830" y="525" text-anchor="middle" fill="#f59e0b" font-size="20">🌙</text>
+                <text x="830" y="545" text-anchor="middle" fill="white" font-size="10">Dark/Light Mode</text>
+                
+                <rect x="920" y="500" width="140" height="60" rx="8" fill="rgba(255,255,255,0.05)"/>
+                <text x="990" y="525" text-anchor="middle" fill="#f59e0b" font-size="20">📱</text>
+                <text x="990" y="545" text-anchor="middle" fill="white" font-size="10">Mobile-first</text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Project Content -->
+    <section class="project-detail-content">
+        <div class="container">
+            <div class="project-description">
+                
+                <h2>💡 My Approach</h2>
+                <p>I approached this project from both a design and development perspective. The main challenge was to make a service-based website that feels simple and reliable, while still offering enough functionality for different types of users.</p>
+                <p>To achieve this, I focused on:</p>
+                <ul>
+                    <li>Creating a clean and intuitive interface that quickly communicates trust and availability</li>
+                    <li>Designing for mobile-first usage, as most customers book taxis on their phones</li>
+                    <li>Supporting multiple languages (NL / EN / ES) to reach a broader audience across the Benelux</li>
+                    <li>Implementing a dark/light mode to improve usability in different contexts</li>
+                    <li>Structuring content to guide users naturally toward booking or contact</li>
+                </ul>
+
+                <h2>⚙️ Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>🌍 Multi-language Support</h4>
+                        <p>Instant switching between Dutch, English, and Spanish for international users.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📱 Responsive Design</h4>
+                        <p>Mobile-first approach with adaptive navigation and touch-friendly interface.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🌙 Theme Toggle</h4>
+                        <p>Dark/light mode with system preference detection for comfortable viewing.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📝 Smart Booking Form</h4>
+                        <p>Pre-selection options and validation for a smooth booking experience.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🔍 SEO Optimized</h4>
+                        <p>Meta tags, Open Graph, and structured data for better discoverability.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>♿ Accessibility</h4>
+                        <p>ARIA labels and semantic HTML for inclusive user experience.</p>
+                    </div>
+                </div>
+
+                <h2>🧠 What I Learned</h2>
+                <p>This project helped me strengthen my skills in:</p>
+                <ul>
+                    <li>Building scalable front-end architecture without frameworks</li>
+                    <li>Thinking in terms of user flows and conversion instead of just visuals</li>
+                    <li>Implementing internationalization (i18n) in a clean and maintainable way</li>
+                    <li>Balancing performance, accessibility, and design in a real client project</li>
+                </ul>
+
+                <h2>🛠️ Tech Stack</h2>
+                <div class="project-tags" style="margin-top: 15px;">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">Vanilla JavaScript</span>
+                    <span class="tag">i18n</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Responsive Design</span>
+                </div>
+
+                <div class="button-group">
+                    <a href="https://taxipoint.nl" target="_blank" class="cta-button">🌐 View Live Website</a>
+                </div>
+
+                <a href="../index.html" class="back-link">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Projects</a>
+                <a href="../certifications/google-analytics.html">Certifications</a>
+                <a href="https://github.com/robinslevel" target="_blank">GitHub</a>
+            </div>
+            <p>© 2026 Robin Korkor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            const isDark = document.body.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            document.querySelector('.theme-toggle').textContent = isDark ? '☀️' : '🌙';
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.body.classList.add('dark');
+            document.querySelector('.theme-toggle').textContent = '☀️';
+        }
+
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

@@ -1,12 +1,37 @@
-# Tamagotchi 🐣
+# Robin Korkor Portfolio 🌐
 
-A simple browser-based Tamagotchi virtual pet game built with vanilla JavaScript.
+A portfolio website showcasing projects and certifications, including the Tamagotchi virtual pet game.
 
-## 🎮 Play Now
+## 🔗 Live Links
 
-Play the game: [GitHub Pages Link](https://YOUR_USERNAME.github.io/Tamagotchi/)
+- **Portfolio**: [robinslevel.github.io/Tamagotchi/portfolio](https://robinslevel.github.io/Tamagotchi/portfolio/)
+- **Tamagotchi Game**: [robinslevel.github.io/Tamagotchi](https://robinslevel.github.io/Tamagotchi/)
 
-## ✨ Features
+## 📂 Featured Projects
+
+### 🚕 Taxipoint — Taxi Service Website
+A modern, responsive website for a taxi company operating across the Benelux. Features multi-language support, dark/light mode, and mobile-first design.
+- **Tech**: HTML, CSS, JavaScript, i18n
+
+### 💕 HeartRank — Photo Rating Web App
+An experimental MVP where users rate profiles 1–10 with a Tinder-style interface and live leaderboard.
+- **Tech**: Next.js, TypeScript, Prisma, Tailwind CSS
+- [View on GitHub](https://github.com/robinslevel/rateus)
+
+### 🐣 Tamagotchi — Virtual Pet Game
+A browser-based virtual pet game where players manage hunger, happiness, and energy. Features pet evolution and random events.
+- **Tech**: JavaScript, HTML, CSS
+
+## 📜 Certifications
+
+- Google Analytics Certification
+- Grow Offline Sales Certification
+- GA4 Data & Reports Training
+- [View all credentials on Skillshop](https://skillshop.credential.net/profile/robinkorkor83800/wallet)
+
+## 🎮 Tamagotchi Game
+
+### Features
 
 - **Feed** your pet to keep hunger levels up 🍕
 - **Play** with your pet to increase happiness 🎮
@@ -15,48 +40,41 @@ Play the game: [GitHub Pages Link](https://YOUR_USERNAME.github.io/Tamagotchi/)
 - **Random events** that affect your pet's stats
 - **Game over** if any stat reaches zero
 
-## 🚀 Getting Started
+### How to Play
 
-### Play Locally
+- Keep all three stats (Hunger, Happiness, Energy) above zero
+- **Feed**: Increases hunger, decreases energy slightly
+- **Play**: Increases happiness, decreases energy and hunger
+- **Sleep**: Toggle sleep mode to restore energy
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Tamagotchi.git
-   ```
+## 📁 Project Structure
 
-2. Open `index.html` in your browser
+```
+Tamagotchi/
+├── index.html              # Tamagotchi game
+├── style.css               # Game styles
+├── game.js                 # Game logic
+├── portfolio/
+│   ├── index.html          # Portfolio home
+│   ├── css/
+│   │   └── portfolio.css   # Portfolio styles
+│   ├── projects/
+│   │   ├── taxipoint.html
+│   │   ├── heartrank.html
+│   │   └── tamagotchi.html
+│   └── certifications/
+│       └── google-analytics.html
+├── README.md
+└── LICENSE
+```
 
-That's it! No build tools or dependencies required.
-
-### Deploy to GitHub Pages
+## 🚀 Deploy to GitHub Pages
 
 1. Push this repository to GitHub
 2. Go to **Settings** → **Pages**
 3. Under "Source", select **Deploy from a branch**
 4. Select `main` branch and `/ (root)` folder
 5. Click **Save**
-
-Your game will be live at `https://YOUR_USERNAME.github.io/Tamagotchi/`
-
-## 🎯 How to Play
-
-- Keep all three stats (Hunger, Happiness, Energy) above zero
-- **Feed**: Increases hunger, decreases energy slightly
-- **Play**: Increases happiness, decreases energy and hunger
-- **Sleep**: Toggle sleep mode to restore energy (other stats decrease slowly)
-- Watch for random events that give bonus stats!
-- Your pet evolves as it ages - keep it alive to see all stages!
-
-## 📁 Project Structure
-
-```
-Tamagotchi/
-├── index.html    # Main HTML file
-├── style.css     # Styles and animations
-├── game.js       # Game logic
-├── README.md     # This file
-└── LICENSE       # MIT License
-```
 
 ## 🛠️ Built With
 

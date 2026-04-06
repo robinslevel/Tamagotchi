@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartRank — Robin Korkor Portfolio</title>
+    <meta name="description" content="HeartRank - An experimental photo rating web app with Tinder-style interface">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Robin Korkor</a>
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Projects</a></li>
+                <li><a href="../certifications/google-analytics.html">Certifications</a></li>
+                <li><a href="https://github.com/robinslevel" target="_blank">GitHub</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Projects</a> / <span>HeartRank</span>
+        </div>
+    </div>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>💕 HeartRank — Photo Rating Web App</h1>
+            <p style="font-size: 1.1rem; color: #64748b; max-width: 700px;">An experimental MVP web app where users rate profiles on a scale of 1–10 and see how they rank on a live leaderboard.</p>
+            <div class="project-meta">
+                <span>📅 2025</span>
+                <span>🧪 Experimental MVP</span>
+                <span>💻 Next.js + TypeScript</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase Image -->
+    <div class="container">
+        <div class="project-showcase">
+            <svg class="showcase-image" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="heartBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0f0f1a"/>
+                        <stop offset="100%" style="stop-color:#1a1025"/>
+                    </linearGradient>
+                    <linearGradient id="heartAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ec4899"/>
+                        <stop offset="100%" style="stop-color:#f472b6"/>
+                    </linearGradient>
+                </defs>
+                <!-- Browser frame -->
+                <rect width="1200" height="600" rx="12" fill="#1e293b"/>
+                <rect x="0" y="0" width="1200" height="40" rx="12" fill="#334155"/>
+                <circle cx="20" cy="20" r="6" fill="#ef4444"/>
+                <circle cx="44" cy="20" r="6" fill="#f59e0b"/>
+                <circle cx="68" cy="20" r="6" fill="#22c55e"/>
+                <rect x="100" y="12" width="300" height="16" rx="8" fill="#475569"/>
+                
+                <!-- App content mockup -->
+                <rect x="40" y="60" width="1120" height="520" fill="url(#heartBg)"/>
+                
+                <!-- Header -->
+                <text x="600" y="100" text-anchor="middle" fill="url(#heartAccent)" font-size="28" font-weight="bold">💕 HeartRank</text>
+                
+                <!-- Card Stack -->
+                <rect x="420" y="140" width="360" height="380" rx="20" fill="#2d2d44" opacity="0.3" transform="rotate(3 600 330)"/>
+                <rect x="420" y="140" width="360" height="380" rx="20" fill="#2d2d44" opacity="0.5" transform="rotate(-2 600 330)"/>
+                <rect x="420" y="140" width="360" height="380" rx="20" fill="#363654"/>
+                
+                <!-- Profile placeholder -->
+                <circle cx="600" cy="280" r="80" fill="#4a4a6a"/>
+                <text x="600" y="295" text-anchor="middle" fill="#94a3b8" font-size="50">👤</text>
+                
+                <!-- Name and age -->
+                <text x="600" y="400" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Profile Name</text>
+                <text x="600" y="425" text-anchor="middle" fill="#94a3b8" font-size="14">Swipe or rate 1-10</text>
+                
+                <!-- Rating buttons -->
+                <g transform="translate(430, 460)">
+                    <circle cx="0" cy="0" r="25" fill="#363654" stroke="#ef4444" stroke-width="2"/>
+                    <text x="0" y="5" text-anchor="middle" fill="#ef4444" font-size="12">1</text>
+                </g>
+                <g transform="translate(770, 460)">
+                    <circle cx="0" cy="0" r="25" fill="#363654" stroke="#22c55e" stroke-width="2"/>
+                    <text x="0" y="5" text-anchor="middle" fill="#22c55e" font-size="12">10</text>
+                </g>
+                
+                <!-- Slider -->
+                <rect x="470" y="453" width="260" height="8" rx="4" fill="#363654"/>
+                <rect x="470" y="453" width="130" height="8" rx="4" fill="url(#heartAccent)"/>
+                <circle cx="600" cy="457" r="12" fill="white"/>
+                
+                <!-- Leaderboard preview -->
+                <rect x="900" y="140" width="220" height="380" rx="12" fill="rgba(255,255,255,0.05)"/>
+                <text x="1010" y="175" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🏆 Leaderboard</text>
+                <rect x="920" y="200" width="180" height="40" rx="8" fill="rgba(236,72,153,0.2)"/>
+                <text x="945" y="225" fill="#f472b6" font-size="14">1. Profile A</text>
+                <text x="1080" y="225" text-anchor="end" fill="#f472b6" font-size="14">9.2</text>
+                <rect x="920" y="250" width="180" height="40" rx="8" fill="rgba(255,255,255,0.05)"/>
+                <text x="945" y="275" fill="#94a3b8" font-size="14">2. Profile B</text>
+                <text x="1080" y="275" text-anchor="end" fill="#94a3b8" font-size="14">8.7</text>
+                <rect x="920" y="300" width="180" height="40" rx="8" fill="rgba(255,255,255,0.05)"/>
+                <text x="945" y="325" fill="#94a3b8" font-size="14">3. Profile C</text>
+                <text x="1080" y="325" text-anchor="end" fill="#94a3b8" font-size="14">8.4</text>
+                
+                <!-- Privacy badge -->
+                <rect x="60" y="500" width="200" height="40" rx="8" fill="rgba(34,197,94,0.1)"/>
+                <text x="160" y="525" text-anchor="middle" fill="#22c55e" font-size="12">🔒 Privacy-First Design</text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Project Content -->
+    <section class="project-detail-content">
+        <div class="container">
+            <div class="project-description">
+                
+                <h2>🎯 The Concept</h2>
+                <p>HeartRank is an experimental MVP web app where users can rate profiles on a scale of 1–10 and see how they compare on a live leaderboard. The concept explores how simple interaction patterns—like swiping and scoring—can drive engagement and competition.</p>
+                <p>The app uses a Tinder-style card system for intuitive voting, combined with a dynamic leaderboard that highlights top-ranked profiles.</p>
+
+                <h2>⚙️ Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>🎴 Card-Based Interface</h4>
+                        <p>Tinder-style swipeable cards for quick and intuitive profile rating.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📊 Live Leaderboard</h4>
+                        <p>Real-time ranking system showing top-rated profiles.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🔄 Session-Based Voting</h4>
+                        <p>Vote deduplication to ensure fair and accurate rankings.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📱 Responsive Design</h4>
+                        <p>Smooth experience across both mobile and desktop devices.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🔒 Privacy-First</h4>
+                        <p>No authentication, no personal data collection, fictional profiles only.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🗄️ Prisma Database</h4>
+                        <p>Structured database with clean component-based architecture.</p>
+                    </div>
+                </div>
+
+                <h2>🛡️ Ethical Approach</h2>
+                <p>An important part of this project is its ethical design. The app is designed strictly for:</p>
+                <ul>
+                    <li>Fictional profiles or fully consenting participants</li>
+                    <li>No authentication required</li>
+                    <li>No personal data collection</li>
+                    <li>Privacy-first setup with no user tracking</li>
+                </ul>
+
+                <h2>🧠 What I Learned</h2>
+                <p>From a technical perspective, I implemented features such as:</p>
+                <ul>
+                    <li>Session-based vote deduplication</li>
+                    <li>Structured database design with Prisma</li>
+                    <li>Clean component-based architecture in Next.js</li>
+                    <li>Balancing interactivity with simplicity in a small-scale application</li>
+                </ul>
+
+                <h2>🛠️ Tech Stack</h2>
+                <div class="project-tags" style="margin-top: 15px;">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Prisma</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">React</span>
+                </div>
+
+                <div class="button-group">
+                    <a href="https://github.com/robinslevel/rateus" target="_blank" class="cta-button">🔗 View on GitHub</a>
+                </div>
+
+                <a href="../index.html" class="back-link">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Projects</a>
+                <a href="../certifications/google-analytics.html">Certifications</a>
+                <a href="https://github.com/robinslevel" target="_blank">GitHub</a>
+            </div>
+            <p>© 2026 Robin Korkor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            const isDark = document.body.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            document.querySelector('.theme-toggle').textContent = isDark ? '☀️' : '🌙';
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.body.classList.add('dark');
+            document.querySelector('.theme-toggle').textContent = '☀️';
+        }
+
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
