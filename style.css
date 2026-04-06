@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.pet-container {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pet {
+    font-size: 60px;
+    transition: transform 0.3s ease;
+}
+
+.pet:hover {
+    transform: scale(1.1);
+}
+
+.pet.happy {
+    animation: bounce 0.5s ease;
+}
+
+.pet.sad {
+    filter: grayscale(50%);
+}
+
+.pet.sleeping {
+    animation: sleep 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes sleep {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+}
+
+.pet-name {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.stats {
+    margin: 20px 0;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.stat label {
+    width: 80px;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    width: 100%;
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
+
+.stat span {
+    width: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.actions button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.actions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.actions button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    min-height: 40px;
+    color: #666;
+}
+
+.game-over {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.game-over.show {
+    display: flex;
+}
+
+.game-over h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.game-over p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+}
+
+.game-over button:hover {
+    background: #45a049;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .actions {
+        flex-direction: column;
+    }
+    
+    .actions button {
+        width: 100%;
+    }
+}

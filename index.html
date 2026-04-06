@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tamagotchi</h1>
+        
+        <div class="pet-container">
+            <div class="pet" id="pet">🥚</div>
+            <div class="pet-name" id="petName">Your Pet</div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <label>Hunger</label>
+                <div class="progress-bar">
+                    <div class="progress" id="hungerBar"></div>
+                </div>
+                <span id="hungerValue">100</span>
+            </div>
+            <div class="stat">
+                <label>Happiness</label>
+                <div class="progress-bar">
+                    <div class="progress" id="happinessBar"></div>
+                </div>
+                <span id="happinessValue">100</span>
+            </div>
+            <div class="stat">
+                <label>Energy</label>
+                <div class="progress-bar">
+                    <div class="progress" id="energyBar"></div>
+                </div>
+                <span id="energyValue">100</span>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button onclick="feed()" id="feedBtn">🍕 Feed</button>
+            <button onclick="play()" id="playBtn">🎮 Play</button>
+            <button onclick="sleep()" id="sleepBtn">😴 Sleep</button>
+        </div>
+        
+        <div class="message" id="message"></div>
+        
+        <div class="game-over" id="gameOver">
+            <h2>Game Over!</h2>
+            <p>Your pet has left you...</p>
+            <button onclick="resetGame()">Try Again</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
